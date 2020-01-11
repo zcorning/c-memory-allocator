@@ -1,0 +1,10 @@
+The par_malloc.c file contains all the code for the optimized thread-safe 
+memory allocator and implements xmalloc.h. The xmalloc.h header file contains 
+three functions: xmalloc, xfree, and xrealloc. These three functions are 
+intended to have the same behavior as the standard C functions: malloc, free, 
+and realloc.
+
+When testing for speed using two programs with a variable-sized array-type list 
+and a linked list, this memory allocator implementation beats the C standard 
+functions. The two test programs each did a variety of large and small memory 
+allocations.
